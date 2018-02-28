@@ -26,7 +26,7 @@ origin	https://android.googlesource.com/platform/manifest (fetch)
 origin	https://android.googlesource.com/platform/manifest (push)
 fhem@noobbuilds-laptop ~/manifest $
 ```
-## 3.0  In file/tree explorer delete ~/manifest/.git --- this will get rid of all history and give us a clean starting point for our manifest.
+## 3.0  Use file/tree explorer to delete .git folder in manifest directory --- this will get rid of all history and give us a clean starting point for our manifest.
 
 ## 4.0  Initiate new manifest repo for our needs.
 ```
