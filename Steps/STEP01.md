@@ -4,7 +4,7 @@
 There are many ways to do this - Hopefully this will
 help people to learn a little and to get started.
 
-## 1.0  [Clone manifest from]( https://android.googlesource.com/?format=HTML)
+## 1.0  [Clone manifest from here]( https://android.googlesource.com/?format=HTML)
 ```
 fhem@noobbuilds-laptop ~ $ git clone -b android-8.1.0_r11 https://android.googlesource.com/platform/manifest
 Cloning into 'manifest'...
