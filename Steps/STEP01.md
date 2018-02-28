@@ -62,7 +62,7 @@ Changes to be committed:
 fhem@noobbuilds-laptop ~/manifest $ git checkout -b o81
 Switched to a new branch 'o81'
 ```
-## 7.0  Add our remote [Pic01](https://i.imgur.com/zWt96EU.png) [Pic02](https://i.imgur.com/SVaFR09.png) [Pic03](https://i.imgur.com/XupWZRg.png)
+## 7.0  Add our remote and make commit to add manifest. [Pic01](https://i.imgur.com/zWt96EU.png) [Pic02](https://i.imgur.com/SVaFR09.png) [Pic03](https://i.imgur.com/XupWZRg.png)
 ```
 fhem@noobbuilds-laptop ~/manifest $ git remote add noob2xl https://github.com/noob2xl/platform_manifest.git
 fhem@noobbuilds-laptop ~/manifest $ git commit -a -m "Initial taimen Oreo 8.1 manifest."
