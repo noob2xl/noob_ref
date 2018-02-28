@@ -1,10 +1,10 @@
  
-##NOOB STEP ONE GET MANIFEST##
+# NOOB STEP ONE GET MANIFEST
 
 There are many ways to do this - Hopefully this will
 help people to learn a little and to get started.
 
-#1.0  [Clone manifest from]( https://android.googlesource.com/?format=HTML)#
+## 1.0  [Clone manifest from]( https://android.googlesource.com/?format=HTML)
 ```
 fhem@noobbuilds-laptop ~ $ git clone -b android-8.1.0_r11 https://android.googlesource.com/platform/manifest
 Cloning into 'manifest'...
@@ -14,7 +14,7 @@ Receiving objects: 100% (7462/7462), 7.69 MiB | 13.32 MiB/s, done.
 Resolving deltas: 100% (2055/2055), done.
 Checking connectivity... done.
 ```
-#2.0  Change to manifest directory#
+## 2.0  Change to manifest directory
 ```
 fhem@noobbuilds-laptop ~ $ cd ~/manifest
 fhem@noobbuilds-laptop ~/manifest $ git status
@@ -26,10 +26,9 @@ origin	https://android.googlesource.com/platform/manifest (fetch)
 origin	https://android.googlesource.com/platform/manifest (push)
 fhem@noobbuilds-laptop ~/manifest $
 ```
-#3.0  In file/tree explorer delete ~/manifest/.git --- this will get rid of all history and give us a clean
-     starting point for our manifest.#
+## 3.0  In file/tree explorer delete ~/manifest/.git --- this will get rid of all history and give us a clean starting point for our manifest.
 
-#4.0  Initiate new manifest repo for our needs.#
+## 4.0  Initiate new manifest repo for our needs.
 ```
 fhem@noobbuilds-laptop ~/manifest $ git init
 Initialized empty Git repository in /home/fhem/manifest/.git/
@@ -45,7 +44,7 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-#5.0  Add manifest#
+## 5.0  Add manifest
 ```
 fhem@noobbuilds-laptop ~/manifest $ git add default.xml
 fhem@noobbuilds-laptop ~/manifest $ git status
@@ -58,15 +57,12 @@ Changes to be committed:
 
 	new file:   default.xml
 ```
-#6.0  Add branch#
+## 6.0  Add branch
 ```
 fhem@noobbuilds-laptop ~/manifest $ git checkout -b o81
 Switched to a new branch 'o81'
 ```
-#7.0  Add our remote
-      [Pic01](https://i.imgur.com/zWt96EU.png)
-      [Pic02](https://i.imgur.com/SVaFR09.png)
-      [Pic03](https://i.imgur.com/XupWZRg.png)#
+## 7.0  Add our remote [Pic01](https://i.imgur.com/zWt96EU.png) [Pic02](https://i.imgur.com/SVaFR09.png) [Pic03](https://i.imgur.com/XupWZRg.png)
 ```
 fhem@noobbuilds-laptop ~/manifest $ git remote add noob2xl https://github.com/noob2xl/platform_manifest.git
 fhem@noobbuilds-laptop ~/manifest $ git commit -a -m "Initial taimen Oreo 8.1 manifest."
@@ -74,9 +70,7 @@ fhem@noobbuilds-laptop ~/manifest $ git commit -a -m "Initial taimen Oreo 8.1 ma
  1 file changed, 625 insertions(+)
  create mode 100644 default.xml
 ```
-#8.0  Push to our git.
-      [Pic04](https://i.imgur.com/bO4RvqA.png)
-      [Pic05](https://i.imgur.com/3wgRVU3.png)#
+## 8.0  Push to our git. [Pic04](https://i.imgur.com/bO4RvqA.png) [Pic05](https://i.imgur.com/3wgRVU3.png)
 ```
 fhem@noobbuilds-laptop ~/manifest $ git push -u noob2xl o81
 Username for 'https://github.com': fhemaosp
@@ -91,8 +85,7 @@ To https://github.com/noob2xl/platform_manifest.git
 Branch o81 set up to track remote branch o81 from noob2xl.
 fhem@noobbuilds-laptop ~/manifest $
 ```
-#9.0  Edit manifest for our use, check diff, make commit, and 
-      push to git. [Example of git diff](https://i.imgur.com/1DoAfGu.png)#
+## 9.0  Edit manifest for our use, check diff, make commit, and push to git. [Example of git diff](https://i.imgur.com/1DoAfGu.png)
 ```
 fhem@noobbuilds-laptop ~/manifest $ git status
 On branch o81
@@ -161,7 +154,7 @@ To https://github.com/noob2xl/platform_manifest.git
 Branch o81 set up to track remote branch o81 from noob2xl.
 fhem@noobbuilds-laptop ~/manifest $
 ```
-#10.0 Add README.md file and push to git.#
+## 10.0 Add README.md file and push to git.
 ```
 fhem@noobbuilds-laptop ~/manifest $ git status
 On branch o81
