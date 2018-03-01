@@ -17,19 +17,20 @@ fhem@noobbuilds-laptop ~/noob2xl/build/make $ git remote -v
 aosp	https://android.googlesource.com/platform/build (fetch)
 aosp	https://android.googlesource.com/platform/build (push)
 ```
-##  Add your branch
+## 3.0 Add your branch
 ```
 fhem@noobbuilds-laptop ~/noob2xl/build/make $ git checkout -b o81
 Switched to a new branch 'o81'
 fhem@noobbuilds-laptop ~/noob2xl/build/make $ git branch
 * o81
 ```
-## 3.0  Remove aosp remote and add your remote
+## 4.0  Remove aosp remote and add your remote
 ```
 fhem@noobbuilds-laptop ~/noob2xl/build/make $ git remote rm aosp
 fhem@noobbuilds-laptop ~/noob2xl/build/make $ git remote add noob https://github.com/noob2xl/platform_build_make.git
 ```
-## 4.0  Push repo to your github
+## 5.0  Push repo to your github
+```
 fhem@noobbuilds-laptop ~/noob2xl/build/make $ git push -u noob o81
 Username for 'https://github.com': fhemaosp
 Password for 'https://fhemaosp@github.com': 
@@ -43,11 +44,11 @@ To https://github.com/noob2xl/platform_build_make.git
  * [new branch]      o81 -> o81
 Branch o81 set up to track remote branch o81 from noob.
 ```
-## 5.0  Move terminal to ~/noob2xl/manifst
+## 6.0  Move terminal to ~/noob2xl/manifst
 ```
 fhem@noobbuilds-laptop ~/noob2xl/build/make $ cd '/home/fhem/noob2xl/manifest'
 ```
-## 6.0  Edit manifest
+## 7.0  Edit manifest
 ```
 fhem@noobbuilds-laptop ~/noob2xl/manifest $ git status
 On branch o81
@@ -95,13 +96,13 @@ index ac87589..b30e712 100644
 -  </project>
    <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
 ```
-## 7.0  Commit manifest changes
+## 8.0  Commit manifest changes
 ```
 fhem@noobbuilds-laptop ~/noob2xl/manifest $ git commit -a -m "Track build/make locally."
 [o81 cc7229c] Track build/make locally.
  1 file changed, 9 insertions(+), 9 deletions(-)
 ```
-## 8.0  Push commit to git
+## 9.0  Push commit to git
 ```
 fhem@noobbuilds-laptop ~/noob2xl/manifest $ git push -u noob o81
 Counting objects: 3, done.
