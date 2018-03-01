@@ -24,12 +24,12 @@ Switched to a new branch 'o81'
 fhem@noobbuilds-laptop ~/noob2xl/build/make $ git branch
 * o81
 ```
-## 4.0  Remove aosp remote and add your remote
+## 4.0  Remove aosp remote and add your remote  [PIC07](https://i.imgur.com/k6ZrMlS.png)
 ```
 fhem@noobbuilds-laptop ~/noob2xl/build/make $ git remote rm aosp
 fhem@noobbuilds-laptop ~/noob2xl/build/make $ git remote add noob https://github.com/noob2xl/platform_build_make.git
 ```
-## 5.0  Push repo to your github
+## 5.0  Push repo to your github  [PIC08](https://i.imgur.com/SUdSzol.png)
 ```
 fhem@noobbuilds-laptop ~/noob2xl/build/make $ git push -u noob o81
 Username for 'https://github.com': fhemaosp
@@ -48,7 +48,7 @@ Branch o81 set up to track remote branch o81 from noob.
 ```
 fhem@noobbuilds-laptop ~/noob2xl/build/make $ cd '/home/fhem/noob2xl/manifest'
 ```
-## 7.0  Edit manifest
+## 7.0  Edit manifest  [MANIFEST DIFF](https://i.imgur.com/uFV0IYN.png)
 ```
 fhem@noobbuilds-laptop ~/noob2xl/manifest $ git status
 On branch o81
